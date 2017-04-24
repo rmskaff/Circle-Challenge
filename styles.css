@@ -1,0 +1,67 @@
+body{
+  background-color: rgba(226, 206, 206, 0.5);
+  font-family: helvetica, arial, sans-serif;
+}
+
+.container{
+  width: 25%;
+  margin:10% auto;
+  background-color:rgba(226, 206, 206, 0.7);
+  border: 1px dashed;
+
+}
+form{
+  text-align: center;
+padding:7%;
+}
+
+h1{
+  text-align: center;
+  padding:10px;
+  margin-bottom: 10%;
+}
+
+#circle{
+background-color: black;
+border-radius: 50%;
+width: 100px;
+height:100px;
+margin-left: 45%;
+box-shadow: 4px 4px rgba(0,0,0,0.6);
+}
+#circle:hover{
+  animation-name: example;
+     animation-duration: 10s;
+
+}
+@-webkit-keyframes example {
+  0%   { background: red; }
+   20%  { background: orange; }
+   40%  { background: yellow; }
+   60%  { background: green; }
+   80%  { background: blue; }
+   100% { background: violet; }
+  }
+@keyframes example {
+  0%   { background: red; }
+     20%  { background: orange; }
+     40%  { background: yellow; }
+     60%  { background: green; }
+     80%  { background: blue; }
+     100% { background: violet; }
+}
+.bounce {
+  position:relative;
+  bottom:0;
+  margin-top:-25px;
+  margin-left:-25px;
+  height:50px;
+  width:50px;
+  background:red;
+  -webkit-animation:bounce 1s infinite;
+}
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     {bottom:0;}
